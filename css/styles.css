@@ -1,0 +1,675 @@
+/* CSS GLOBALS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'QuickSand', sans-serif;
+    line-height: 2;
+    background: #f5f5f5;
+}
+
+::-webkit-scrollbar{
+    width: .8rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #2C188E;
+    border-radius: .5rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-footer{
+    padding: 30px;
+}
+
+.copyright{
+    padding: 30px;
+}
+
+.h1{
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 80px;
+}
+
+.description{
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 50px;
+    line-height: 1;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    /* font-family: 'Courier Prime', sans-serif; */
+    color: black;
+}
+
+i{
+    font-size: 25px;
+}
+
+.button{
+    width: 150px;
+    padding: 10px;
+    color: #f5f5f5;
+    background: #2C188E;
+    border: none;
+}
+
+.button:hover{
+    width: 120px;
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Bounce */
+.bounce{
+    background-image: linear-gradient(to left, #0F0444, #000);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    /* color: #2C188E; */
+}
+
+
+/* Header */
+
+header{
+    min-height: 100vh;
+    background-image: url("../background.jpg");
+    background-size: cover;
+}
+
+
+.navigation-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f5f5f5;
+    height: 60px;
+    padding: 15px;
+    box-shadow:  5px 5px 5px #000;
+    
+}
+
+.img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navigation-links{
+    animation: nav-load 300ms ease-out;
+}
+
+.navigation-links ul{
+    display: flex;
+    gap: 20px;
+    color: #0F0444;
+}
+
+.sign{
+    padding: 8px;
+    background: #000;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.sign:hover{
+    background: #f5f5f5;
+    border: 1px solid black;
+    color: #000;
+}
+
+/* Hero-Section Styling */
+.hero-section{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.heroText{
+    font-family: 'Courier Prime', sans-serif;
+    color: whitesmoke;
+    font-size: 3rem;
+    width: 100%;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero__description_text{
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.bookBtn{
+    color: #fff;
+    background-color:#0F0444;
+    padding: .5rem 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.bookBtn:hover{
+    color: #0F0444;
+    background-color: #f5f5f5;
+}
+
+/* .search-cars{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100%;
+    background: #2C188E;
+    margin-top: 30px;
+    display: none;
+}
+
+.SearchBtn{
+    color: #f5f5f5;
+    background: #0F0444;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 30px;
+    margin: auto;
+    margin-top: 50px;
+} */
+
+/* .input{
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+} */
+
+.btns{
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+
+/* ABOUT US */
+#about-us{
+    height: 100svh;
+    background: #f7f7f7;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    margin-top: 145px;
+    box-shadow: 10px 10px 10px #0F0444;
+}
+
+
+.about-text{
+    width: 50%;
+    margin-top: 50px;
+}
+
+
+
+/* OUR VEHICLES */
+#vehicles{
+    /* height: 100svh; */
+   /*  margin-top: 50px; */
+    margin-bottom: 50px;
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.vehicle-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.vehicle-containers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+
+.vehicle {
+    border: #0F0444 1px solid; 
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: background 1s, transform 1s;
+    flex-basis: calc(25% - 50px);
+    box-sizing: border-box;
+}
+
+.vehicle .category,
+.vehicle .name,
+.vehicle .capacity,
+.vehicle .rate,
+.vehicle .short-description {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.vehicle .name{
+    font-size: 20px;
+}
+
+.vehicle .rate{
+    color: #2C188E;
+    font-weight: bolder;
+}
+
+.vehicle:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.vehicle-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-car, .reserve{
+    padding: 10px;
+    font-family: 'open sans', sans-serif ;
+    border: none;
+    outline: none;
+    width: 45%;
+}
+
+.view-car{
+    background: #0F0444; 
+    transition: .5s;   
+}
+
+.view-car:hover{
+    background: #000;
+}
+
+.view-car a{
+    color: whitesmoke;
+}
+
+
+.reserve{
+    background: black;
+    transition: .5s;  
+}
+
+.reserve:hover{
+    background: #0F0444;
+}
+
+.reserve a{
+    color: whitesmoke;
+}
+
+.btnSeeMore{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btnSeeMore a{
+    color: #f5f5f5;
+}
+
+.name{
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.short-description{
+    font-family: 'Courier Prime', sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* HOW TO BOOK*/
+.how{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 20%;
+    border: 1px solid black;
+    gap: 50px;
+    padding: 20px;
+    background: #2C188E;
+    color: #f5f5f5;
+}
+
+
+#howtobook{
+    height: 100svh;
+}
+
+.book{
+    text-align: center;
+}
+
+.booktext{
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+/* Frequently Asked Questions */
+.accordion{
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 65%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    background: #2C188E;
+    color: #f5f5f5;
+}
+
+.accordion .accordion-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accordion .content-container .question{
+    padding: 18px 0px;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+}
+
+.accordion .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+}
+
+.accordion .content-container .answer{
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* Javascript Styling Link */
+.accordion .content-container.active .answer{
+    height: 150px;
+}
+
+.accordion .content-container.active .question{
+    font-size: 18px;
+    transition: .5s;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 200px;
+    background: #0F0444;
+    color: whitesmoke;
+}
+
+.wrapper-footer > div > ul > li > a{
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.wrapper-footer > div > ul > li > a:hover{
+    color: grey;
+}
+
+.wrapper-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.drivemenow-desc{
+    width: 25%;
+}
+
+.drivep{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+.social-media > div > i{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.social-media > div > i:hover{
+    color: grey;
+}
+
+.License > ul{
+    margin-top: 20px;
+}
+
+.telaccept{
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.telaccept > i{
+    font-size: 10px;
+}
+
+.social-media > div > i{
+    margin-top: 20px;
+}
+
+.explore > ul{
+    margin-top: 20px;
+}
+
+.account > ul{
+    margin-top: 20px;
+}
+
+.fleet > ul{
+    margin-top: 20px;
+}
+
+.copyright{
+    border-top: solid 1px cyan;
+    padding: 20px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Sign In and sign up pages */
+.account-description{
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+}
+
+
+.form{
+    margin-top: 100px;
+    margin-left: 500px;
+    background: #e6e3ef;
+    width: 30%;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px #0F0444 ;
+}
+
+.main{
+    font-family: 'Courier Prime', sans-serif;
+    text-align: center;
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.signup{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #89C4E1;
+    background: transparent;
+    font-size: 15px;
+    color: #000;
+    font-family: 'Poppins' , sans-serif;
+    line-height: 20px;
+    margin-bottom: 15px;
+ }
+
+ 
+ input:focus{
+    border: 3px solid #065c56;
+    background: #f5f5f5;
+    color: black;
+ }
+
+
+
+.error{
+    border: 1px solid red;
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+
+.btn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #000;
+    color: white;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.btn a{
+    color: #000;
+}
+
+.btn a:hover{
+    color: #f5f5f5;
+}
+
+.btn:hover{
+    width: 60%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.sign-page{
+    padding: 8px;
+    background: #000;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.sign-page a{
+    color: #f5f5f5;
+    width: 100%;
+}
+
+.sign-page:hover{
+    background: #f5f5f5;
+    border: 1px solid black;
+}
+
+.sign-page a:hover{
+    color: #000;
+}
+
+.copyright-sign{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier prime', sans-serif;
+}
