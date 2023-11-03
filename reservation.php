@@ -6,6 +6,8 @@ include_once './includes/db.inc.php';
 //Get the car name from the url
 if(isset($_GET['name'])){
     $selectedVehicle = $_GET['name']; 
+    session_start();
+    $_SESSION['selectedVehicle'] = $selectedVehicle;
 } else{
     header("Location: ./vehicles.php");
     exit();
