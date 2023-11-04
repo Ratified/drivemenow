@@ -12,7 +12,7 @@
             border: 1px solid #ccc;
             padding: 20px;
             border-radius: 5px;
-            background-color: #f9f9f9;
+            background-color: #fff;
     }
 
         .reservedCar h1 {
