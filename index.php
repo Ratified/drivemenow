@@ -295,7 +295,7 @@
         
         <div class="copyright">
             <p>Copyright &copy; 2023 - All Rights Reserved</p>
-            <p>Designed and developed by <a href="http://kamungegeorge.live/" target="_blank" >GKStudios</a></p>
+            <p>Designed and developed by <a href="https://github.com/Ratified" target="_blank" >RatifiedGeorge</a></p>
         </div>
     </footer>
 
