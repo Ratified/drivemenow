@@ -126,7 +126,7 @@
                 echo '<div class="rate">' . $row['rate'] . '/= per day</div>';
                 echo '<div class="vehicle-buttons">';
                 echo '<button type="submit" class="view-car"><a href="view-car.php?name=' . $row['name'] . '">View Car</a></button>';
-                echo '<button type="submit" class="reserve"><a href="reservation.php">Reserve Now</a></button>';
+                echo '<button type="submit" class="reserve"><a href="reservation.php?name='. $row['name'] .'">Reserve Now</a></button>';
                 echo '</div>';
                 echo '</div>';
             }

@@ -3,6 +3,11 @@
 include_once 'header.php';
 include_once './includes/db.inc.php';
 
+if(!isset($_SESSION['useruid'])){
+    echo "<script>alert('You need to login first!')</script>";
+    header("Location: ./Account/signin.php");
+    exit();
+}
 //Get the car name from the url
 if(isset($_GET['name'])){
     $selectedVehicle = $_GET['name']; 
