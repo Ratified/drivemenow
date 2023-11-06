@@ -8,7 +8,14 @@
 <style>
 .vehicle-containers{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media(max-width: 800px){
+    .vehicle-containers{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
 }
 
 </style>

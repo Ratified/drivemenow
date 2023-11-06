@@ -3,6 +3,12 @@
 include_once 'header.php';
 include_once 'includes/db.inc.php';
 
+if(!isset($_SESSION['useruid'])){
+    header('Location: Account/signin.php');
+    echo "<script>alert('You need to login first!')</script>";
+    exit();
+}
+
 ?>
 
 <style>
